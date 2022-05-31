@@ -1,0 +1,39 @@
+<script type='text/javascript'>
+    RED.nodes.registerType('nd-set-env', {
+        category: 'advanced',
+        color: '#cccccc',
+        defaults: {
+            name: { value: '' }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'env.png',
+        label: function () {
+            return this.name || 'set-env';
+        }
+    });
+</script>
+<script type='text/x-red' data-template-name='nd-set-env'>
+    <div class='form-row'>
+        <label for='node-input-name'><i class='fa fa-tag'></i> Name</label>
+        <input type='text' id='node-input-name' placeholder='Name'>
+    </div>
+
+</script>
+<script type='text/x-red' data-help-name='nd-set-env'>
+
+<dl class="message-properties">
+    <dt>Set msg.env</dt>
+    <dd>
+        Value (ENV Name) replaces.
+<pre>
+<code>msg.env = {
+    "lang": "LANG",
+    "shell": "SHELL",
+    "path": "PATH"
+}</code>
+</pre>
+    </dd>
+</dl>
+
+</script>

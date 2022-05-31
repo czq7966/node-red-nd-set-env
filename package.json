@@ -1,0 +1,23 @@
+{
+  "name": "node-red-nd-set-env",
+  "version": "0.0.1",
+  "node-red": {
+    "nodes": {
+      "nd-set-env": "set-env.js"
+    }
+  },
+  "description": "Node-RED node for set.env",
+  "main": "set-env.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "keywords": [
+    "node-red",
+    "process",
+    "env"
+  ],
+  "author": "CZQ",
+  "license": "Apache-2.0"
+
+}
